@@ -1,0 +1,35 @@
+.Aside {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .1);
+  align-items: center;
+  box-shadow: 1px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  transform: translateX(0);
+  transition: transform .22s ease-in;
+  z-index: 90;
+  padding: 15px;
+
+  @media (min-width: 767px) {
+    width: 250px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 450px;
+  }
+
+  @media (max-width: 767px) {
+    transform: translateX(250px);
+    box-shadow: none;
+  }
+  
+  p {
+      font-size: 16px;
+      margin-bottom: 1em;
+      line-height: 1.25;
+  }
+}
